@@ -56,7 +56,6 @@ interface GameDetailProps {
 export default function GameDetailModal({ isOpen, onClose, game }: GameDetailProps) {
     const [currentImageIndex, setCurrentImageIndex] = useState(0)
 
-    // Handle carousel navigation
     const nextImage = () => {
         if (game.short_screenshots && game.short_screenshots.length > 0) {
         setCurrentImageIndex((prev) => (prev === game.short_screenshots!.length - 1 ? 0 : prev + 1))
