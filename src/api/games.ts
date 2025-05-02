@@ -2,7 +2,6 @@ import api from "./api";
 
 export const fetchGames = async() => {
     const response = await api.get("/games");
-    console.log(response.data.results)
     return response.data;
 }
 
